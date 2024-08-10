@@ -1,0 +1,3 @@
+[submodule "wanderwise-frontend"]
+	path = wanderwise-frontend
+	url = https://github.com/Manas2006/travel-planner
