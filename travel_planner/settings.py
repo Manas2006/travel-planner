@@ -169,4 +169,3 @@ REST_FRAMEWORK = {
     ),
 }
 
-# Allow unauthenticated access to certain endpoints like signup
