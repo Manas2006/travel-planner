@@ -119,3 +119,14 @@ You can obtain a Google Maps API key from the [Google Cloud Console](https://con
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Project Screenshots
+
+### Home Page
+![Home Page](images/homePage.png)
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+
+### Itinerary Planning
+![Itinerary Planning](images/itinerary.png)
