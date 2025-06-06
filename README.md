@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# WanderWise - Travel Planning Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WanderWise is a full-stack travel planning application that helps users create, manage, and share their travel itineraries. The platform combines a Django backend with a React frontend to provide a seamless travel planning experience.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+### Backend
+- Django (Python web framework)
+- Django REST Framework (API development)
+- SQLite (Database)
 
-### `npm start`
+### Frontend
+- React 18
+- React Router DOM
+- Google Maps API integration
+- TailwindCSS for styling
+- Axios for API requests
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+travel-planner/
+├── travel_planner/          # Django project settings
+├── users/                   # User management app
+├── itineraries/            # Itinerary management app
+├── wanderwise-frontend/    # React frontend
+├── public/                 # Static files
+└── manage.py              # Django management script
+```
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User authentication and authorization
+- Create and manage travel itineraries
+- Interactive map integration using Google Maps API
+- Responsive design with TailwindCSS
+- RESTful API architecture
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Python 3.x
+- Node.js and npm
+- Google Maps API key
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend Setup
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### `npm run eject`
+3. Run migrations:
+   ```bash
+   python manage.py migrate
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
+   ```bash
+   python manage.py runserver
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd wanderwise-frontend
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+## API Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Users
+- `/api/users/` - User registration and management
+- `/api/users/login/` - User authentication
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Itineraries
+- `/api/itineraries/` - CRUD operations for travel itineraries
+- `/api/itineraries/<id>/` - Individual itinerary management
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
