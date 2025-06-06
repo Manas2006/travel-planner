@@ -16,6 +16,18 @@ WanderWise is a full-stack travel planning application that helps users create, 
 - TailwindCSS for styling
 - Axios for API requests
 
+## Project Screenshots
+
+### Home Page
+![Home Page](images/homePage.jpg)
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+
+### Itinerary Planning
+![Itinerary Planning](images/itinerary.png)
+
+
 ## New Project Structure
 
 ```
@@ -120,13 +132,3 @@ You can obtain a Google Maps API key from the [Google Cloud Console](https://con
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Project Screenshots
-
-### Home Page
-![Home Page](images/homePage.png)
-
-### Dashboard
-![Dashboard](images/dashboard.png)
-
-### Itinerary Planning
-![Itinerary Planning](images/itinerary.png)
